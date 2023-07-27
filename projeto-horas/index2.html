@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de horas</title>
+</head>
+<body>
+    <nav id="menu">
+        <a href="index2.html">Novos Cadastros</a>
+        <a href="index.html">Lançamento</a>
+        <a href="index3.html">Novos Projetos</a>
+    </nav>
+    <div>
+        <form id="form2">
+            <h1>Novos Cadastros</h1>
+            <div>
+                <label for="textName" id="labelName" class="label">Nome</label><br>
+                <input type="text" name="name" id="textName" placeholder="Digite aqui seu nome!" maxlength="45" class="inputs required" oninput="nameValidate()"><br>
+                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>           
+            </div>
+            <div>
+                <button type="button" class="buttons" onclick="buttonValidate()">Salvar</button>
+                <button type="reset" class="buttons1" onclick="reloadPage()">Cancelar</button>
+                    <span class="span-required2">Insira o nome no campo acima!</span>            
+            </div>
+        </form>
+    </div>
+    <footer>Site Criado por <a href="https://github.com/devgustavoduarte" target="_blank">Gustavo Duarte</a> &copy;</footer>
+</body>
+<link rel="stylesheet" href="css/style.css">
+<script src="scripts.js" defer></script>
+</html>

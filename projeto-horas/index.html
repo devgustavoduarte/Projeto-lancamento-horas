@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de horas</title>
+</head>
+<body>
+    <nav id="menu">
+        <a href="index2.html">Novos Cadastros</a>
+        <a href="index.html">Lançamento</a>
+        <a href="index3.html">Novos Projetos</a>
+    </nav>
+    <div>
+        <form id="form">
+            <h1>Lançamento de Horas</h1>
+            <div>
+                <label for="nameSelect" id="labelName" class="label">Nome</label><br>
+                <select name="nameS" id="nameSelect" class="inputs"></select>
+            </div>
+            <div>
+                <label for="projectSelect" id="labelProject" class="label">Projetos</label><br>
+                <select name="projectS" id="projectSelect" class="inputs"></select>
+            </div>
+            <div>
+                <label for="timeInput" id="labelHour" class="label">Horas</label><br>
+                <input type="number" name="time" id="timeInput" class="inputs hours" maxlength="4" oninput="hourValidate()">
+                <span class="span-required1">Forneça um horário válido</span>   
+            </div>
+            <div>
+                <label for="atividadeArea" id="labelActivity" class="label">Atividades</label><br>
+                <textarea name="activity-space" id="atividadeArea" cols="30" rows="10" placeholder="Digite seu progresso no projeto!" class="inputs activity1" maxlength="250" oninput="activityValidate()"></textarea>
+                <span class="span-required">Progresso deve ter no mínimo 30 caracteres</span>            
+            </div>
+            <div>
+                <button type="button" class="buttons" onclick="buttonValidateForm()">Salvar</button>
+                <button type="reset" class="buttons1" onclick="reloadPage()">Cancelar</button>
+                    <span class="span-required4">Preencha todos os campos para continuar!</span>            
+            </div>
+        </form>
+    </div>
+    <footer>Site Criado por <a href="https://github.com/devgustavoduarte" target="_blank">Gustavo Duarte</a> &copy;</footer>
+</body>
+<link rel="stylesheet" href="css/style.css">
+<script src="scripts.js" defer></script>
+</html>

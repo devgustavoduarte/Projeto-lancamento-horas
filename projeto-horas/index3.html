@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de horas</title>
+</head>
+<body>
+    <nav id="menu">
+        <a href="index2.html">Novos Cadastros</a>
+        <a href="index.html">Lançamento</a>
+        <a href="index3.html">Novos Projetos</a>
+    </nav>
+    <div>
+        <form id="form3">
+            <h1>Novos Projetos</h1>
+            <div>
+                <label for="textName" id="labelProject" class="label">Projeto</label><br>
+                <input type="text" name="project" id="textName" placeholder="Digite aqui o nome do seu projeto!" maxlength="45" class="inputs required2" oninput="projectNameValidate()"><br>
+                <span class="span-required">Nome do projeto deve ter no mínimo 10 caracteres!</span>            
+            </div>
+            <div>
+                <button type="button" class="buttons" onclick="buttonValidateProject()">Salvar</button>
+                <button type="reset" class="buttons1" onclick="reloadPage()">Cancelar</button>
+                    <span class="span-required3">Insira o nome do projeto acima!</span>            
+            </div>
+        </form>
+    </div>
+    <footer>Site Criado por <a href="https://github.com/devgustavoduarte" target="_blank">Gustavo Duarte</a> &copy;</footer>
+</body>
+<link rel="stylesheet" href="css/style.css">
+<script src="scripts.js" defer></script>
+</html>

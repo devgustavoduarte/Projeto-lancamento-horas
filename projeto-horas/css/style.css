@@ -1,0 +1,166 @@
+:root{
+    --color01: darkslategray;
+    --color02: green;
+    --color03: darkgreen;
+    --color04: black;
+    --color05: white;
+    --color06: greenyellow;
+    --color07: red;
+}
+
+
+*{
+    font-weight: bold;
+    text-shadow: 2px 2px 15px var(--color04);
+}
+body{
+    background-image: linear-gradient(to bottom, var(--color04), rgb(32, 54, 54));
+    background-attachment: fixed;
+    color: var(--color05);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu{
+    text-align: center;
+    padding: 12px;
+}
+#menu > a {
+    background-color: var(--color01);
+    color: var(--color05);
+    margin: 5px 5px 5px 5px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px var(--color06);
+    transition-duration: 2s;
+}
+#menu > a:hover{
+    border: 2px solid var(--color06);
+    background-color: var(--color03);
+}
+form{
+    background-color: var(--color01);
+    margin: 15px auto;
+    width: 50%;
+    height: 100%;
+    border: 1px solid var(--color02);
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px var(--color02);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#form2{
+    height: 100%;
+}
+#form3{
+    height: 100%;
+}
+#nameSelect{
+    margin-bottom: 18px;
+    width: 50%;
+    border-radius: 5px;
+}
+#textName{
+    border-radius: 5px;
+    width: 50%;
+    margin-bottom: 15px;
+    text-shadow: none;
+    font-weight: normal;
+}
+#projectSelect{
+    margin-bottom: 18px;
+    width: 50%;
+    border-radius: 5px;
+}
+#timeInput{
+    margin-bottom: 18px;
+    width: 70px;
+    border-radius: 5px;
+}
+#atividadeArea{
+    margin: auto;
+    margin-bottom: 18px;
+    width: 70%;
+    border-radius: 05px;
+    font-weight: normal;
+    text-shadow: none;
+}
+.buttons, .buttons1{
+    background-color: var(--color01);
+    color: var(--color05);
+    border-radius: 10px;
+    padding: 6px;
+    border: .1px solid var(--color04);
+    font-size: 1em;
+    cursor: pointer;
+    margin: 3px 3px 13px 3px;
+}
+.buttons:hover, .buttons1:hover{
+    transition-duration: .4s;
+    background-color: var(--color03);
+    border: 3px solid var(--color02);
+    box-shadow: 1px 1px 5px var(--color06);
+}
+footer{
+    background-color: var(--color01);
+    margin: auto;
+    border-radius: 15px;
+    width: 25%;
+    text-align: center;
+    padding: 1px;
+    box-shadow: 1px 1px 15px var(--color02);
+    transition-duration: 2s;
+}
+footer > a{
+    color: var(--color05);
+    text-decoration: none;
+    transition-duration: 2s;
+}
+.span-required{
+    display: none;
+    font-size: 14px;
+    margin: 0px 5px 15px;
+    color: var(--color07);
+    text-shadow:2px 2px 5px var(--color04);
+}
+.span-required1{
+    display: none;
+    font-size: 14px;
+    margin: 0px 5px 15px;
+    color: var(--color07);
+    text-shadow:2px 2px 5px var(--color04);
+}
+.span-required2{
+    display: none;
+    font-size: 14px;
+    margin: 0px 5px 15px;
+    color: var(--color07);
+    text-shadow:2px 2px 5px var(--color04);
+}
+.span-required3{
+    display: none;
+    font-size: 14px;
+    margin: 0px 5px 15px;
+    color: var(--color07);
+    text-shadow:2px 2px 5px var(--color04);
+}
+.span-required4{
+    display: none;
+    font-size: 14px;
+    margin: 0px 5px 15px;
+    color: var(--color07);
+    text-shadow:2px 2px 5px var(--color04);
+}
+.inputs{
+    outline: none;
+    background-color: var(--color04);
+    color: var(--color05);
+    margin-top: 2.5px;
+    transition: 1s;
+}
+.inputs:focus{
+    border: 3px solid;
+    border-color: var(--color06);
+}
+.label{
+    font-size: 1.1em;
+}
