@@ -19,6 +19,8 @@ const activity = document.querySelectorAll(".activity1");
 const nameRegex = /^[a-zA-z]+$/
 const hourRegex = /^[0-2][0-3]:[0-5][0-9]$/
 
+/*const nomesCadastro = document.querySelector("#textName");*/
+
 function nameValidate(){
     if(campos[0].value.length < 3){
         setError(0);
@@ -34,7 +36,7 @@ function projectNameValidate(){
     }
 };
 function hourValidate(){
-    if(hours[0].value.length > 4){
+    if(hours[0].value.length > 3){
         setError3(0);
     }else{
         removeError3(0);
@@ -140,3 +142,73 @@ function removeButtonError3(index){
     campos3[index].style.border = ''
     span4[index].style.display = 'none'
 }
+
+/*
+
+fetch("dados.json").then((response) => {
+    response.json().then((dados) => {
+        dados.usuarios.map((usuarios) => {
+            nomesCadastro.innerHTML += `<li> ${usuarios.nome} - ${usuarios.sobrenome} </li>`
+            console.log(usuarios);
+        })
+    })
+})*/
+
+
+/*
+nomesCadastro.forEach(function(item){
+    addOption(item)
+});
+
+function addOption(valor){
+    let option = new Option(valor, valor);
+    let select = document.getElementById("nameSelect");
+    select.add(option);
+} */
+
+
+
+
+var arr = [];
+ 
+function addItem(){
+   if (localStorage.nomesCadastro){             
+      arr = JSON.parse(localStorage.getItem('nomesCadastro')); 
+   }
+   
+   let novoItem = document.getElementById("textName").value;
+   arr.push(novoItem);
+   document.getElementById("textName").value = "";
+   localStorage.nomesCadastro = JSON.stringify(arr);
+};
+document.getElementById("nameOption").innerHTML=localStorage.getItem("nomesCadastro");
+
+
+/*
+let againObjectName = JSON.parse(localStorage.getItem("nomesCadastro"));
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+var arr2 = [];
+ 
+function addItem2(){
+   if (localStorage.projetosCadastro){             
+      arr2 = JSON.parse(localStorage.getItem('projetosCadastro')); 
+   }
+   
+   let novoItem = document.getElementById("projectName").value;
+   arr2.push(novoItem);
+   document.getElementById("projectName").value = "";
+   localStorage.projetosCadastro = JSON.stringify(arr2);
+};  
+*/

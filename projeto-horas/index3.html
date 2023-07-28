@@ -16,11 +16,11 @@
             <h1>Novos Projetos</h1>
             <div>
                 <label for="textName" id="labelProject" class="label">Projeto</label><br>
-                <input type="text" name="project" id="textName" placeholder="Digite aqui o nome do seu projeto!" maxlength="45" class="inputs required2" oninput="projectNameValidate()"><br>
+                <input type="text" name="project" id="projectName" placeholder="Digite aqui o nome do seu projeto!" maxlength="45" class="inputs required2" oninput="projectNameValidate()"><br>
                 <span class="span-required">Nome do projeto deve ter no mínimo 10 caracteres!</span>            
             </div>
             <div>
-                <button type="button" class="buttons" onclick="buttonValidateProject()">Salvar</button>
+                <button type="button" class="buttons" onclick="buttonValidateProject(), addItem2()">Salvar</button>
                 <button type="reset" class="buttons1" onclick="reloadPage()">Cancelar</button>
                     <span class="span-required3">Insira o nome do projeto acima!</span>            
             </div>
@@ -30,4 +30,4 @@
 </body>
 <link rel="stylesheet" href="css/style.css">
 <script src="scripts.js" defer></script>
-</html>
+</html> 

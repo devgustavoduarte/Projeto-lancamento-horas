@@ -66,6 +66,13 @@ form{
     text-shadow: none;
     font-weight: normal;
 }
+#projectName{
+    border-radius: 5px;
+    width: 50%;
+    margin-bottom: 15px;
+    text-shadow: none;
+    font-weight: normal;
+}
 #projectSelect{
     margin-bottom: 18px;
     width: 50%;
