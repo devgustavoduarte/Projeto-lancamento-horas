@@ -16,20 +16,23 @@
             <h1>Lançamento de Horas</h1>
             <div>
                 <label for="nameSelect" id="labelName" class="label">Nome</label><br>
-                <select name="nameS" id="nameSelect" class="inputs">
-                    <option>---- Selecione ----</option>
+
+                <select required name="nameS" id="nameSelect" class="inputs">
+                    <option disabled selected>---- Selecione ----</option>
                     <option id="nameOption"></option>
                 </select>
             </div>
             <div>
                 <label for="projectSelect" id="labelProject" class="label">Projetos</label><br>
-                <select name="projectS" id="projectSelect" class="inputs" >
-                    <option>---- Selecione ----</option>
+
+                <select required name="projectS" id="projectSelect" class="inputs">
+                    <option disabled selected>---- Selecione ----</option>
+                    <option id="projectOption"></option>
                 </select>
             </div>
             <div>
                 <label for="timeInput" id="labelHour" class="label">Horas</label><br>
-                <input type="number" name="time" id="timeInput" class="inputs hours" maxlength="4" oninput="hourValidate()">
+                <input type="number" name="time" id="timeInput" class="inputs hours" maxlength="3" oninput="hourValidate()">
                 <span class="span-required1">Forneça um horário válido</span>   
             </div>
             <div>

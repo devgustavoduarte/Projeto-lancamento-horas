@@ -4,7 +4,7 @@ const form3 = document.getElementById("form3");
 
 const campos = document.querySelectorAll(".required");
 const campos2 = document.querySelectorAll(".required2");
-const campos3 = document.querySelectorAll(".inputs");
+const campos3 = document.getElementsByClassName("inputs");
 
 const span = document.querySelectorAll(".span-required");
 const span1 = document.querySelectorAll(".span-required1");
@@ -66,7 +66,7 @@ function buttonValidateProject(){
 };
 
 function buttonValidateForm(){
-    if(campos3[0].value === ''){
+    if(campos3[0].value === '---- Selecione ----'){
         setButtonError3(0);
     }else{
         removeButtonError3(0);
@@ -143,32 +143,6 @@ function removeButtonError3(index){
     span4[index].style.display = 'none'
 }
 
-/*
-
-fetch("dados.json").then((response) => {
-    response.json().then((dados) => {
-        dados.usuarios.map((usuarios) => {
-            nomesCadastro.innerHTML += `<li> ${usuarios.nome} - ${usuarios.sobrenome} </li>`
-            console.log(usuarios);
-        })
-    })
-})*/
-
-
-/*
-nomesCadastro.forEach(function(item){
-    addOption(item)
-});
-
-function addOption(valor){
-    let option = new Option(valor, valor);
-    let select = document.getElementById("nameSelect");
-    select.add(option);
-} */
-
-
-
-
 var arr = [];
  
 function addItem(){
@@ -181,24 +155,7 @@ function addItem(){
    document.getElementById("textName").value = "";
    localStorage.nomesCadastro = JSON.stringify(arr);
 };
-document.getElementById("nameOption").innerHTML=localStorage.getItem("nomesCadastro");
 
-
-/*
-let againObjectName = JSON.parse(localStorage.getItem("nomesCadastro"));
-*/
-
-
-
-
-
-
-
-
-
-
-
-/*
 var arr2 = [];
  
 function addItem2(){
@@ -206,9 +163,25 @@ function addItem2(){
       arr2 = JSON.parse(localStorage.getItem('projetosCadastro')); 
    }
    
-   let novoItem = document.getElementById("projectName").value;
-   arr2.push(novoItem);
+   let novoItem2 = document.getElementById("projectName").value;
+   arr2.push(novoItem2);
    document.getElementById("projectName").value = "";
    localStorage.projetosCadastro = JSON.stringify(arr2);
-};  
-*/
+};
+document.getElementById("projectOption").innerHTML+=localStorage.getItem("projetosCadastro");
+localStorage.projetosCadastro = JSON.parse(arr2);
+document.getElementById("nameOption").innerHTML+=localStorage.getItem("nomesCadastro");
+localStorage.nomesCadastro = JSON.parse(arr);
+
+
+
+/*
+nomesCadastro.forEach(function(item){
+    addOption(item)
+});
+
+function addOption(valor){
+    let option = new Option(valor, valor);
+    let select = document.getElementById("nameSelect");
+    select.add(option);
+} */
